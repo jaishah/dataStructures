@@ -22,6 +22,7 @@ public class LinkList {
 				current = current.getNxt();
 			}
 			current.setNxt(temp);
+			temp.setPrev(current);
 		}
 		length++;
 	}
@@ -34,9 +35,11 @@ public class LinkList {
 		}
 		while (current.getNxt() != null) {
 			if (current.getNxt().getNum() == val) {
-				temp = current.getNxt().getNxt(); // node after the one which is
+				temp = current.getNxt().getNxt(); // one node after the one
+													// which is
 													// to be deleted
 				current.setNxt(temp); // reference of current node
+				temp.setPrev(current);
 				current.getNxt().setNxt(null);
 				length--;
 			} else {
@@ -75,6 +78,7 @@ public class LinkList {
 				current = current.getNxt();
 			}
 			current.setNxt(temp);
+			temp.setPrev(current);
 			tail = temp;
 		}
 		length++;
@@ -87,6 +91,7 @@ public class LinkList {
 		}
 		while (current.getNxt() != null) {
 			if (current.getNxt().getNxt() == null) {
+				current.getNxt().setPrev(null);
 				current.setNxt(null); // Delete the most recently inserted
 										// element
 
@@ -107,7 +112,7 @@ public class LinkList {
 		while (current.getNxt() != null) {
 			head = current.getNxt();
 			current.setNxt(null); // Delete the head element
-
+			head.setPrev(null);
 			length--;
 
 		}

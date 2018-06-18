@@ -3,6 +3,7 @@ package com.java.ds;
 public class Node {
 private int num;
 private Node nxt=null;
+private Node prev=null;
 public Node(){
 	
 }
@@ -20,5 +21,11 @@ public Node getNxt() {
 }
 public void setNxt(Node nxt) {
 	this.nxt = nxt;
+}
+public Node getPrev() {
+	return prev;
+}
+public void setPrev(Node prev) {
+	this.prev = prev;
 }
 }
