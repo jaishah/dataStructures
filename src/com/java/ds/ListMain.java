@@ -1,5 +1,9 @@
 package com.java.ds;
-
+/**
+ * Program to show different types of lists
+ * @author 532080
+ *
+ */
 public class ListMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -44,7 +48,7 @@ public class ListMain {
 		}
 		stack.pop();
 		start = stack.getHead();
-		System.out.println("Content of stack after deletion of element by LIFO: ");
+		System.out.println("Content of stack after deletion of element - LIFO: ");
 		for (int i = 1; i <= stack.size(); i++) {
 			System.out.println(start.getNum());
 			start = start.getNxt();

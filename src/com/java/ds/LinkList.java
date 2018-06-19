@@ -8,7 +8,10 @@ public class LinkList {
 	public LinkList() {
 
 	}
-
+/**
+ * Add node in the list/queue
+ * @param val
+ */
 	public void add(int val) {
 
 		if (head == null) {
@@ -26,7 +29,10 @@ public class LinkList {
 		}
 		length++;
 	}
-
+/**
+ * Delete node from the list
+ * @param val
+ */
 	public void delete(int val) {
 		Node current = head;
 		Node temp = null;
@@ -64,7 +70,10 @@ public class LinkList {
 	public void setTail(Node tail) {
 		this.tail = tail;
 	}
-
+/**
+ * Push an element in the stack
+ * @param val
+ */
 	public void push(int val) {
 		if (head == null && tail == null) {
 			head = new Node();
@@ -83,7 +92,9 @@ public class LinkList {
 		}
 		length++;
 	}
-
+/**
+ * Remove an element from the stack
+ */
 	public void pop() {
 		Node current = head;
 		if (current.getNxt() == null) {
@@ -103,7 +114,9 @@ public class LinkList {
 
 		}
 	}
-
+/**
+ * Remove an element from the queue
+ */
 	public void deque() {
 		Node current = head;
 		if (current.getNxt() == null) {
