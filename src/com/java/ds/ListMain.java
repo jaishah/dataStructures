@@ -1,8 +1,6 @@
 package com.java.ds;
-
 /**
  * Program to show different types of lists
- * 
  * @author 532080
  *
  */
