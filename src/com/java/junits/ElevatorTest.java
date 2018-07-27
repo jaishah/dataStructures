@@ -8,8 +8,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.java.elevator.Elevator;
-import com.java.elevator.Elevator.Status;
 import com.java.elevator.LiftLogic;
+import com.java.elevator.LiftLogic.Status;
 
 public class ElevatorTest {
 public LiftLogic mains = new LiftLogic();

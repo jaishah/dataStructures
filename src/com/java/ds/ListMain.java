@@ -1,5 +1,7 @@
 package com.java.ds;
 
+import com.java.sorting.BubbleSort;
+
 /**
  * Program to show different types of lists
  * 
@@ -74,6 +76,18 @@ public class ListMain {
 			start = start.getNxt();
 		}
 
+		BubbleSort bs = new BubbleSort();
+		int range = 50;
+		int[] unsorted = new int[range];
+		System.out.println("UnSorted array: ");
+		for(int k=0;k<range;k++){
+			int element = (int)(Math.random()*range)+1;	
+			System.out.print(" "+element);
+			unsorted[k]=element;
+		}
+		
+		bs.sort(unsorted);
+		
 	}
 
 }

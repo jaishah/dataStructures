@@ -17,8 +17,8 @@ public class MathPrograms {
 		
 	}
 	
-	public void gcd(int a,int b){
-		
+	public int gcd(int a,int b){
+		return gcd(a,a%b);
 	}
 	
 	public void printFibonacci(int numTerms){
