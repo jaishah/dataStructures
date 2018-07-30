@@ -14,7 +14,6 @@ import com.java.elevator.LiftLogic.Status;
 public class ElevatorTest {
 public LiftLogic mains = new LiftLogic();
 int flr_num;
-int range = 13;
 ArrayList<Elevator> list = new ArrayList<Elevator>();
 	@Before
 	public void setUp() throws Exception {
